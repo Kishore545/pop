@@ -2,6 +2,8 @@ package pop
 
 import (
 	"fmt"
+
+	dol "github.com/Kishore545/Dol"
 )
 
 func Bark() string {
@@ -10,6 +12,14 @@ func Bark() string {
 
 func Barks() string {
 	return "Woof Woof Woof"
+}
+
+func Bigbark() string {
+	return dol.WhenGrownUp(Bark())
+}
+
+func Bigbarks() string {
+	return dol.WhenGrownUp(Barks())
 }
 
 func From11() {
